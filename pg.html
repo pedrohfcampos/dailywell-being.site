@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Suplement Serene</title>
+    <title>Suplement Earthy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Calm your wellness routine with our soothing Suplement combo!" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Connect with nature through our Earthy Suplement combo!" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -13,7 +13,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            background-color: #f0f7ff; /* Very light blue for a serene background */
+            background-color: #FAF3E0; /* A light cream color for a warm, inviting background */
             font-family: 'Roboto', sans-serif;
         }
 
@@ -24,13 +24,13 @@
             justify-content: center;
             padding: 20px;
             text-align: center;
-            background-image: linear-gradient(to bottom, #ffffff, #cce7ff); /* Gradient from white to light blue */
+            background-image: linear-gradient(to bottom, #FFF8E1, #E0CDA9); /* Gradient from creamy white to light terracotta */
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
 
         .confirmation-box {
             padding: 20px;
-            background-color: #ffffff; /* Pure white for clarity and focus */
+            background-color: #ffffff; /* Maintaining white for clarity and simplicity */
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             width: 100%;
@@ -39,12 +39,12 @@
 
         .confirmation-text {
             font-size: 24px;
-            color: #0077B5; /* Soft blue for text, calming and inviting */
+            color: #8A6E63; /* Earthy brown for text, rich and grounding */
             font-weight: bold;
             margin-bottom: 20px;
         }
         .btn {
-            background-color: #00aaff; /* Vibrant light blue for the button, lively yet soothing */
+            background-color: #6D8759; /* Olive green for the button, natural and calming */
             border: none;
             padding: 15px 45px;
             font-size: 20px;
@@ -58,18 +58,18 @@
         }
 
         .btn:hover {
-            background-color: #0088cc; /* A deeper shade of blue for hover, enhancing user interaction */
+            background-color: #5A6F48; /* A darker shade of olive green for hover, enhancing user interaction */
         }
 
         #timer {
             margin-top: 20px;
             font-size: 20px;
-            color: #333333; /* Medium gray for a subtle emphasis */
+            color: #A9927D; /* Soft terracotta for a subtle emphasis */
             font-weight: bold;
         }
 
         footer {
-            background-color: #0055aa; /* Dark blue for a solid, grounding footer */
+            background-color: #8A6E63; /* Dark earthy brown for a solid, grounding footer */
             color: white;
             padding: 20px;
             text-align: center;
@@ -94,14 +94,14 @@
             font-size: 12px;
             margin-top: 10px;
             line-height: 1.5;
-            color: #ccc; /* Light grey for a less obtrusive disclaimer text */
+            color: #ccc; /* Light gray for a less obtrusive disclaimer text */
         }
     </style>
 </head>
 <body>
     <main>
         <div class="confirmation-box">
-            <p class="confirmation-text">Click WATCH NOW if You Have +40</p>
+            <p class="confirmation-text">Nature Awaits: Confirm Your Interest & Click Watch Now!</p>
             <a href="https://dailywell-being.site/pg1">
             <button class="btn" id="proceedButton">WATCH NOW</button>
         </a>
@@ -143,7 +143,7 @@
               currentUrlParams.forEach(function(value, key) {
                   newHref += `${encodeURIComponent(key)}=${encodeURIComponent(value)}&`;
               });
-              newHref = newHref.slice(0, -1); // Remove the last '&'
+              newHref = newHref slice(0, -1); // Remove the last '&'
               proceedButton.href = newHref;
           });
       </script>
