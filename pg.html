@@ -144,7 +144,7 @@
               currentUrlParams.forEach(function(value, key) {
                   newHref += `${encodeURIComponent(key)}=${encodeURIComponent(value)}&`;
               });
-              newHref = newHref slice(0, -1); // Remove the last '&'
+              newHref = newHref.slice(0, -1); // Remove the last '&'
               proceedButton.href = newHref;
           });
       </script>
