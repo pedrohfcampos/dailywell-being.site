@@ -3,47 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sugar Sweep – Everyday Glucose Balance</title>
+  <title>Sugar Sweep – Balanced Glucose Formula</title>
 
   <style>
     :root{
-      --bg:      #f0f4f7;   /* pale gray‑blue */
-      --header:  #e7eef2;   /* lighter header */
-      --accent:  #ff7052;   /* coral buttons */
+      --bg:      #fdfaf4;   /* light beige */
+      --header:  #ebe6dc;   /* soft taupe header */
+      --accent:  #29b37b;   /* fresh green CTA */
+      --brand:   #53356b;   /* plum text accent */
       --text:    #444;
     }
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    h1,h2,h3{color:#222;margin-bottom:10px}
-    h1{font-size:28px;margin-top:20px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    h1,h2,h3{font-weight:700;margin:0 0 10px}
+    h1{font-size:28px;color:var(--brand);margin-top:20px}
     h2{font-size:24px}
     h3{font-size:20px}
+    p{margin:10px 0}
+    a{text-decoration:none;color:inherit}
 
-    header,footer{text-align:center;padding:22px;background:var(--header)}
-    header img{max-width:200px}
+    header,footer{text-align:center;background:var(--header);padding:24px}
+    header img{max-width:180px}
 
     .container{width:92%;max-width:1000px;margin:0 auto;padding:35px 0}
 
-    /* highlights */
+    /* highlight grid */
     .highlights{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin-bottom:30px}
-    .high{flex:1 1 180px;max-width:230px;text-align:center}
+    .high{flex:1 1 180px;max-width:230px;text-align:center;background:#fff;border:1px solid #e1e1e1;border-radius:6px;padding:16px}
     .high img{max-width:90px;margin-bottom:8px}
     .high p{font-weight:700;margin:4px 0}
 
     /* plans */
-    .plans{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin:40px 0}
-    .plan{flex:1 1 210px;max-width:250px;border:1px solid #ccc;border-radius:6px;background:#fff;padding:20px;text-align:center}
-    .best{border:2px solid var(--accent)}
-    .plan img{max-width:100px;margin:12px 0}
+    .plans{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin:42px 0}
+    .plan{flex:1 1 210px;max-width:250px;border:1px solid #ccc;border-radius:6px;background:#fff;padding:22px;text-align:center}
+    .best{border:2px solid var(--accent);background:#ecfaf3}
+    .plan img{max-width:100px;margin:14px 0}
     .price{font-size:26px;font-weight:700;margin:10px 0}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 24px;border-radius:5px;font-weight:700;text-decoration:none}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 26px;border-radius:5px;font-weight:700;margin-top:6px}
 
-    /* faq */
+    /* FAQ accordion */
     details{border:1px solid #dcdcdc;border-radius:5px;padding:14px;margin:12px 0;background:#fff}
     summary{cursor:pointer;font-weight:700}
 
-    .section{margin-top:50px}
-    .disclaimer,.references{font-size:13px;color:#666;margin-top:30px}
-    footer nav a{margin:0 8px;color:#333;text-decoration:none;font-size:14px}
+    .section{margin-top:48px}
+    .disclaimer{font-size:13px;color:#666;margin-top:35px}
+    footer nav a{margin:0 8px;color:#333;font-size:14px}
   </style>
 </head>
 <body>
@@ -57,15 +61,15 @@
 
   <!-- INTRO -->
   <section style="text-align:center">
-    <h1>Sugar Sweep: Gentle Support for Healthy Glucose Levels</h1>
-    <p>Powered by time‑tested botanicals, Sugar Sweep helps you maintain balanced blood‑sugar and steady energy—day after day.</p>
+    <h1>Feel Steady Every Day with <span style="color:var(--accent)">Sugar Sweep</span></h1>
+    <p>A gentle, plant‑powered formula crafted to help keep blood‑sugar levels within a healthy range and support lasting vitality.</p>
   </section>
 
   <!-- HIGHLIGHTS -->
   <section class="highlights">
     <div class="high">
       <img src="assets/images/energy.jpg" alt="Energy">
-      <p>Steady Energy</p>
+      <p>Sustained Energy</p>
     </div>
     <div class="high">
       <img src="assets/images/scale.jpg" alt="Scale">
@@ -73,70 +77,75 @@
     </div>
     <div class="high">
       <img src="assets/images/plant.jpg" alt="Plant‑Based">
-      <p>100 % Plant</p>
+      <p>Pure Botanicals</p>
     </div>
     <div class="high">
       <img src="assets/images/easy.jpg" alt="Easy">
-      <p>2‑Caps Routine</p>
+      <p>2‑Caps Ease</p>
     </div>
     <div class="high">
       <img src="assets/images/craving.jpg" alt="Cravings">
-      <p>Craving Control</p>
+      <p>Craving Support</p>
     </div>
   </section>
 
   <!-- INGREDIENTS (brief) -->
   <section>
-    <h2>Main Ingredients</h2>
+    <h2>Core Botanicals</h2>
     <ul>
-      <li><strong>Bitter Melon</strong> – traditional glucose‑support fruit</li>
-      <li><strong>Banaba Leaf</strong> – source of corosolic acid</li>
-      <li><strong>Olive Leaf</strong> – rich in oleuropein antioxidants</li>
+      <li><strong>Bitter Melon</strong> – time‑honored glucose ally</li>
+      <li><strong>Banaba Leaf</strong> – naturally rich in corosolic acid</li>
+      <li><strong>Olive Leaf</strong> – oleuropein for vascular wellness</li>
     </ul>
   </section>
 
   <!-- PLANS -->
   <section class="section">
-    <h2 style="text-align:center">Select Your Package</h2>
+    <h2 style="text-align:center">Choose Your Best Value</h2>
     <div class="plans">
       <div class="plan">
         <h3>1 Bottle</h3>
-        <img src="assets/images/sugar-sweep-bottle.png" alt="1 bottle">
+        <img src="assets/images/1pot.png" alt="1 bottle">
         <p class="price">$89</p>
-        <a class="btn" href="#">Add to Cart</a>
+        <a class="btn" href="https://buygoods.com/secure/checkout.html?account_id=10246&product_codename=sug1&redirect=aHR0cHM6Ly9zdWdhcnN3ZWVwdG9kYXkuY29tL3Vwc2VsbC1iZw==">Add to Cart</a>
+        <p style="font-size:13px;margin-top:8px">+ $9.90 Shipping</p>
       </div>
+
       <div class="plan best">
         <h3>6 Bottles</h3>
-        <img src="assets/images/sugar-sweep-6.png" alt="6 bottles">
-        <p class="price">$49/bottle</p>
-        <a class="btn" href="#">Add to Cart</a>
+        <img src="assets/images/6pot.png" alt="6 bottles">
+        <p class="price">$49<span style="font-size:16px">/bottle</span></p>
+        <a class="btn" href="https://buygoods.com/secure/checkout.html?account_id=10246&product_codename=sug6&redirect=aHR0cHM6Ly9zdWdhcnN3ZWVwdG9kYXkuY29tL3Vwc2VsbC1iZw==">Add to Cart</a>
+        <p style="font-size:13px;margin-top:8px">Free Shipping</p>
       </div>
+
       <div class="plan">
         <h3>3 Bottles</h3>
-        <img src="assets/images/sugar-sweep-3.png" alt="3 bottles">
-        <p class="price">$59/bottle</p>
-        <a class="btn" href="#">Add to Cart</a>
+        <img src="assets/images/3pot.png" alt="3 bottles">
+        <p class="price">$59<span style="font-size:16px">/bottle</span></p>
+        <a class="btn" href="https://buygoods.com/secure/checkout.html?account_id=10246&product_codename=sug3&redirect=aHR0cHM6Ly9zdWdhcnN3ZWVwdG9kYXkuY29tL3Vwc2VsbC1iZw==">Add to Cart</a>
+        <p style="font-size:13px;margin-top:8px">Free Shipping</p>
       </div>
     </div>
   </section>
 
   <!-- GUARANTEE -->
   <section class="section" style="text-align:center">
-    <h2>180‑Day Money‑Back Assurance</h2>
-    <p>Try Sugar Sweep for a full six months. If it’s not right for you, request a hassle‑free refund.</p>
+    <h2>180‑Day Satisfaction Guarantee</h2>
+    <p>Give Sugar Sweep a try for six months. If it’s not the right fit, request a full refund—no hassle.</p>
   </section>
 
   <!-- FAQ -->
   <section class="section">
-    <h2 style="text-align:center">Frequently Asked Questions</h2>
-    <details open><summary>When might I notice effects?</summary><p>Some users feel steadier energy within weeks; results vary.</p></details>
-    <details><summary>How do I take Sugar Sweep?</summary><p>Simply take two capsules daily with water, preferably with a meal.</p></details>
-    <details><summary>Is it safe?</summary><p>Formulated with natural, non‑GMO ingredients under GMP standards. Consult a professional if needed.</p></details>
+    <h2 style="text-align:center">Common Questions</h2>
+    <details open><summary>How soon might I notice benefits?</summary><p>Many users feel steadier within weeks, but results differ for everyone.</p></details>
+    <details><summary>What’s the best way to take it?</summary><p>Simply take two capsules daily with a glass of water, preferably with food.</p></details>
+    <details><summary>Is Sugar Sweep safe?</summary><p>Formulated with non‑GMO botanicals under GMP standards. If you have a condition or take medication, consult a healthcare provider first.</p></details>
   </section>
 
   <!-- DISCLAIMER -->
   <section class="disclaimer">
-    <p><strong>Disclaimer:</strong> Sugar Sweep is not intended to diagnose, treat, cure, or prevent disease. Statements not evaluated by the FDA.</p>
+    <p><strong>Disclaimer:</strong> Statements on this site have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
   </section>
 
 </div>
